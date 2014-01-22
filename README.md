@@ -37,7 +37,7 @@ Variable names are based on the OpenType code used by Type designers when creati
 @ordn: "ordn" 1; //Ordinals
 @sups: "sups" 1; //Superscript
 @subs: "subs" 1; //Subscript
-@sinf: "sinf" 1; //scientific inferiors
+@sinf: "sinf" 1; //Scientific inferiors
 @numr: "numr" 1; //Numerator
 @dnom: "dnom" 1; //Denominator
 @pnum: "tnum" 1; //Proportional Spacing
@@ -56,8 +56,7 @@ Variable names are based on the OpenType code used by Type designers when creati
 @ss02: "ss02" 1; //Stylistic Set 2
 @ss03: "ss03" 1; //Stylistic Set 3
 @ss04: "ss04" 1; //Stylistic Set 4
-
-//European Character Support
+@size: "size" 1; //Optical Size
 @locl: "locl" 1; //Localized Forms
 @zero: "zero" 1; //Slashed Zero
 ```
