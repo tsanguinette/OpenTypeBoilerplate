@@ -4,8 +4,8 @@ A LESS boilerplate to easily use and control OpenType features in webfonts. This
 * Author: Tyler Sanguinette 2013-2014
 * License: MIT
 
-**Thesis Presentation:** [http://talk.typequest.org](http://talk.typequest.org)  return
-**Thesis Project:** [http://typequest.org](http://typequest.org/)
+**Thesis Project:** [http://typequest.org](http://typequest.org/)  
+**Thesis Presentation:** [http://talk.typequest.org](http://talk.typequest.org)
 
 ## Purpose
 The purpose of this boilerplate is to help make a faster workflow for developers and designers who want to control fine typographic detail with LESS but do not want to write the large amount of code (browser prefixes) to produce it.
