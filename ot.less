@@ -1,0 +1,131 @@
+// http://typequest.org
+// Author: Tyler Sanguinette 2013-2014
+
+//Typographic Values
+@liga: "liga" 1; //Ligatures
+@dlig: "dlig" 1; //Discretionary Ligatures
+@hlig: "hlig" 1; //Historical Ligatures
+@clig: "clig" 1; //Contextual Ligatures
+@smcp: "smcp" 1; //Small Caps
+@c2sc: "c2sc" 1; //Small Caps from Caps
+@cpsp: "cpsp" 1; //Capital Spacing
+@titl: "titl" 1; //Titling Alternates
+@lnum: "lnum" 1; //Lining Numbers
+@onum: "onum" 1; //Old-style Numbers
+@ordn: "ordn" 1; //Ordinals
+@sups: "sups" 1; //Superscript
+@subs: "subs" 1; //Subscript
+@sinf: "sinf" 1; //scientific inferiors
+@numr: "numr" 1; //Numerator
+@dnom: "dnom" 1; //Denominator
+@pnum: "tnum" 1; //Proportional Spacing
+@tnum: "tnum" 1; //Tabular Spacing
+@frac: "frac" 1; //Fractions
+@afrac: "afrac" 1; //Alternate Fractions
+@zero: "zero" 1; //Slashed Zero
+@swsh: "swsh" 1; //Swash Alternates
+@cswh: "cswh" 1; //Contextual Swash
+@calt: "calt" 1; //Contextual Alternates
+@hist: "hist" 1; //Historical Alternates
+@salt: "salt" 1; //Stylistic Alternates
+@c2sc: "c2sc" 1; //Small Capitals from Capitals
+@c2pc: "c2pc" 1; //Petite Capitals from Capitals
+@ss01: "ss01" 1; //Stylistic Set 1
+@ss02: "ss02" 1; //Stylistic Set 2
+@ss03: "ss03" 1; //Stylistic Set 3
+@ss04: "ss04" 1; //Stylistic Set 4
+
+//European Character Support
+@locl: "locl" 1; //Localized Forms
+@zero: "zero" 1; //Slashed Zero
+
+//Disable OpenType features
+.default{
+-moz-font-feature-settings:; 
+-moz-font-feature-settings:""; 
+-ms-font-feature-settings:; 
+-o-font-feature-settings:; 
+-webkit-font-feature-settings:; 
+font-feature-settings:;
+}
+
+//Up to 10 values per font-feature-settings property
+.font-feature-settings(@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8, @value9) {
+  font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8, @value9;
+  -webkit-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8, @value9;
+  -moz-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8, @value9;
+  -o-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8, @value9;
+  -ms-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8, @value9;
+}
+
+.font-feature-settings(@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8) {
+  font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8;
+  -webkit-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8;
+  -moz-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8;
+  -o-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8;
+  -ms-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8;
+}
+
+.font-feature-settings(@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7) {
+  font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7;
+  -webkit-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7;
+  -moz-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7;
+  -o-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7;
+  -ms-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7;
+}
+
+.font-feature-settings(@value, @value1, @value2, @value3, @value4, @value5, @value6) {
+  font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6;
+  -webkit-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6;
+  -moz-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6;
+  -o-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6;
+  -ms-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6;
+}
+
+.font-feature-settings(@value, @value1, @value2, @value3, @value4, @value5) {
+  font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5;
+  -webkit-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5;
+  -moz-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5;
+  -o-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5;
+  -ms-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5;
+}
+
+.font-feature-settings(@value, @value1, @value2, @value3, @value4) {
+  font-feature-settings:@value, @value1, @value2, @value3, @value4;
+  -webkit-font-feature-settings:@value, @value1, @value2, @value3, @value4;
+  -moz-font-feature-settings:@value, @value1, @value2, @value3, @value4;
+  -o-font-feature-settings:@value, @value1, @value2, @value3, @value4;
+  -ms-font-feature-settings:@value, @value1, @value2, @value3, @value4;
+}
+
+.font-feature-settings(@value, @value1, @value2, @value3) {
+  font-feature-settings:@value, @value1, @value2, @value3;
+  -webkit-font-feature-settings:@value, @value1, @value2, @value3;
+  -moz-font-feature-settings:@value, @value1, @value2, @value3;
+  -o-font-feature-settings:@value, @value1, @value2, @value3;
+  -ms-font-feature-settings:@value, @value1, @value2, @value3;
+}
+
+.font-feature-settings(@value, @value1, @value2) {
+  font-feature-settings:@value, @value1, @value2;
+  -webkit-font-feature-settings:@value, @value1, @value2;
+  -moz-font-feature-settings:@value, @value1, @value2;
+  -o-font-feature-settings:@value, @value1, @value2;
+  -ms-font-feature-settings:@value, @value1, @value2;
+}
+
+.font-feature-settings(@value, @value1) {
+  font-feature-settings:@value, @value1;
+  -webkit-font-feature-settings:@value, @value1;
+  -moz-font-feature-settings:@value, @value1;
+  -o-font-feature-settings:@value, @value1;
+  -ms-font-feature-settings:@value, @value1;
+}
+
+.font-feature-settings(@value) {
+  font-feature-settings:@value;
+  -webkit-font-feature-settings:@value;
+  -moz-font-feature-settings:@value;
+  -o-font-feature-settings:@value;
+  -ms-font-feature-settings:@value;
+}
