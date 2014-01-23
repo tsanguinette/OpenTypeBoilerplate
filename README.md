@@ -37,7 +37,7 @@ Variable names are based on the OpenType code used by Type designers when creati
 @ordn: "ordn" 1; //Ordinals
 @sups: "sups" 1; //Superscript
 @subs: "subs" 1; //Subscript
-@sinf: "sinf" 1; //Scientific inferiors
+@sinf: "sinf" 1; //Scientific Inferiors
 @numr: "numr" 1; //Numerator
 @dnom: "dnom" 1; //Denominator
 @pnum: "tnum" 1; //Proportional Spacing
@@ -58,31 +58,22 @@ Variable names are based on the OpenType code used by Type designers when creati
 @ss04: "ss04" 1; //Stylistic Set 4
 @size: "size" 1; //Optical Size
 @locl: "locl" 1; //Localized Forms
-@zero: "zero" 1; //Slashed Zero
 ```
 
 ## Markup pattern
-The boilerplate contains `@value`s up to 10. Which means you can have up to 10 typographic values in the same `font-feature-settings` to activate multiple features at once.
+The boilerplate contains `@value`s up to 10. Which means you can have up to 10 typographic values in the same `font-feature-settings` to activate multiple features at once. Use values from the variable section.
 
 ```less
-.font-feature-settings(@value) {
-  font-feature-settings:@value;
-  -webkit-font-feature-settings:@value;
-  -moz-font-feature-settings:@value;
-  -o-font-feature-settings:@value;
-  -ms-font-feature-settings:@value;
-}
+h1{
+  .font-feature-settings(@value);
+}  
 
-.font-feature-settings(@value, @value1) {
-  font-feature-settings:@value, @value1;
-  -webkit-font-feature-settings:@value, @value1;
-  -moz-font-feature-settings:@value, @value1;
-  -o-font-feature-settings:@value, @value1;
-  -ms-font-feature-settings:@value, @value1;
+h1{
+  .font-feature-settings(@value, @value1);
 }
 ```
 ## Output and Use
-To use this boilerplate simply call the class `.font-feature-settings` and pass in the values (OpenType features) you need.
+To use this boilerplate simply call the class `.font-feature-settings` and pass in the values (OpenType features) you need. Each example shows the LESS code on top followed by the preprocessed.
 
 ```less
 //One value
