@@ -1,14 +1,15 @@
 # OpenType Mixin Boilerplate
-A LESS boilerplate to easily use and control OpenType features in webfonts. This Git is an addition to a thesis project which promotes and educates OpenType features in webfonts through the `font-feature-settings` CSS property.
+A preprocessor boilerplate to easily use and control OpenType features in webfonts. This Git is an addition to a thesis project which promotes and educates OpenType features in webfonts through the W3C lower-level `font-feature-settings` CSS property.
 
 * Author: Tyler Sanguinette 2013-2014
+* Contributor: Jorge Colindres 2014
 * License: MIT
 
 **Thesis Project:** [http://typequest.org](http://typequest.org/)  
 **Thesis Presentation:** [http://talk.typequest.org](http://talk.typequest.org)
 
 ## Purpose
-The purpose of this boilerplate is to help make a faster workflow for developers and designers who want to control fine typographic detail with LESS but do not want to write the large amount of code (browser prefixes) to produce it.
+The purpose of this boilerplate is to help make a faster workflow for developers and designers who want to control fine typographic detail with SCSS, LESS and Stylus but do not want to write the large amount of code (browser prefixes) to produce it.
 
 ## Explanation of CSS Feature
 There are three parts to the CSS feature: 
@@ -19,7 +20,7 @@ There are three parts to the CSS feature:
 
 `-webkit-font-feature-settings: "liga" 1;`
 
-## Variables
+## LESS Variables
 Variable names are based on the OpenType code used by Type designers when creating OpenType data tables. The `font-feature-settings` understands these features and makes them possible. 
 
 ```less
@@ -72,8 +73,8 @@ h1{
   .font-feature-settings(@value, @value1);
 }
 ```
-## Output and Use
-To use this boilerplate simply call the class `.font-feature-settings` and pass in the values (OpenType features) you need. Each example shows the LESS code on top followed by the preprocessed.
+## LESS Output and Use
+To use this boilerplate simply declare the class you want to apply features to, call the class `.font-feature-settings` and then pass in the values (OpenType features) you need. Each example shows the LESS code on top followed by the preprocessed.
 
 ```less
 //One value
@@ -96,6 +97,34 @@ h1{
 }
 
 h1 {
+  font-feature-settings: "liga" 1, "smcp" 1;
+  -webkit-font-feature-settings: "liga" 1, "smcp" 1;
+  -moz-font-feature-settings: "liga" 1, "smcp" 1;
+  -o-font-feature-settings: "liga" 1, "smcp" 1;
+  -ms-font-feature-settings: "liga" 1, "smcp" 1;
+}
+```
+
+## SCSS Output and Use
+To use this boilerplate simply declare a class, use `@include font-feature-settings` to produce the OpenType CSS property and then pass in the values (OpenType features) you need. Each example shows the SCSS code on top followed by the preprocessed.
+
+```scss
+//One value
+.className { @include font-feature-settings($liga); }
+
+.className {
+  font-feature-settings: "liga" 1;
+  -webkit-font-feature-settings: "liga" 1;
+  -moz-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga" 1;
+  -ms-font-feature-settings: "liga" 1;
+}
+
+
+//Two values
+.differentClass { @include font-feature-settings($liga, $smcp); }
+
+.differentClass {
   font-feature-settings: "liga" 1, "smcp" 1;
   -webkit-font-feature-settings: "liga" 1, "smcp" 1;
   -moz-font-feature-settings: "liga" 1, "smcp" 1;
