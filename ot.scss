@@ -1,0 +1,56 @@
+// Author: JC 2014
+
+// Typographic Values
+$liga:   "liga"   1;  // Ligatures
+$dlig:   "dlig"   1;  // Discretionary Ligatures
+$hlig:   "hlig"   1;  // Historical Ligatures
+$clig:   "clig"   1;  // Contextual Ligatures
+$smcp:   "smcp"   1;  // Small Caps
+$c2sc:   "c2sc"   1;  // Small Caps from Caps
+$cpsp:   "cpsp"   1;  // Capital Spacing
+$titl:   "titl"   1;  // Titling Alternates
+$lnum:   "lnum"   1;  // Lining Numbers
+$onum:   "onum"   1;  // Old-style Numbers
+$ordn:   "ordn"   1;  // Ordinals
+$sups:   "sups"   1;  // Superscript
+$subs:   "subs"   1;  // Subscript
+$sinf:   "sinf"   1;  // Scientific inferiors
+$numr:   "numr"   1;  // Numerator
+$dnom:   "dnom"   1;  // Denominator
+$pnum:   "tnum"   1;  // Proportional Spacing
+$tnum:   "tnum"   1;  // Tabular Spacing
+$frac:   "frac"   1;  // Fractions
+$afrac:  "afrac"  1;  // Alternate Fractions
+$zero:   "zero"   1;  // Slashed Zero
+$swsh:   "swsh"   1;  // Swash Alternates
+$cswh:   "cswh"   1;  // Contextual Swash
+$calt:   "calt"   1;  // Contextual Alternates
+$hist:   "hist"   1;  // Historical Alternates
+$salt:   "salt"   1;  // Stylistic Alternates
+$c2sc:   "c2sc"   1;  // Small Capitals from Capitals
+$c2pc:   "c2pc"   1;  // Petite Capitals from Capitals
+$ss01:   "ss01"   1;  // Stylistic Set 1
+$ss02:   "ss02"   1;  // Stylistic Set 2
+$ss03:   "ss03"   1;  // Stylistic Set 3
+$ss04:   "ss04"   1;  // Stylistic Set 4
+$size:   "size"   1;  // Optical Size
+$locl:   "locl"   1;  // Localized Forms
+$zero:   "zero"   1;  // Slashed Zero
+
+// Disable OpenType features
+%default {
+  -webkit-font-feature-settings: "";
+    -moz-font-feature-settings: "";
+    -o-font-feature-settings: "";
+    -ms-font-feature-settings: "";
+    font-feature-settings: "";
+}
+
+// Unlimited number of values per font-feature-settings property
+@mixin font-feature-settings($values...) {
+  -webkit-font-feature-settings: $values;
+    -moz-font-feature-settings: $values;
+    -o-font-feature-settings: $values;
+    -ms-font-feature-settings: $values;
+    font-feature-settings: $values;
+}
