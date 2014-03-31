@@ -93,7 +93,7 @@ h1 {
 
 //Two values
 h1{
-  .font-feature-settings(@liga, @smcp);
+  .font-feature-settings(@liga, @smcp;);
 }
 
 h1 {
