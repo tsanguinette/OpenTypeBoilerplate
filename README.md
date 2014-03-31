@@ -5,23 +5,23 @@ A preprocessor boilerplate to easily use and control OpenType features in webfon
 * Contributor: Jorge Colindres 2014
 * License: MIT
 
-**Thesis Project:** [http://typequest.org](http://typequest.org/)
+**Thesis Project:** [http://typequest.org](http://typequest.org/)  
 **Thesis Presentation:** [http://talk.typequest.org](http://talk.typequest.org)
 
 ## Purpose
 The purpose of this boilerplate is to help make a faster workflow for developers and designers who want to control fine typographic detail with SCSS, LESS and Stylus but do not want to write the large amount of code (browser prefixes) to produce it.
 
 ## Explanation of CSS Feature
-There are three parts to the CSS feature:
+There are three parts to the CSS feature: 
 
-`-webkit-font-feature-settings` *Browser prefix*
-`"liga"` *The OpenType feature*
-`1` *1 for display and 0 for do NOT display*
+`-webkit-font-feature-settings` *Browser prefix*  
+`"liga"` *The OpenType feature*  
+`1` *1 for display and 0 for do NOT display*  
 
 `-webkit-font-feature-settings: "liga" 1;`
 
 ## LESS Variables
-Variable names are based on the OpenType code used by Type designers when creating OpenType data tables. The `font-feature-settings` understands these features and makes them possible.
+Variable names are based on the OpenType code used by Type designers when creating OpenType data tables. The `font-feature-settings` understands these features and makes them possible. 
 
 ```less
 //Typographic Values
@@ -61,6 +61,18 @@ Variable names are based on the OpenType code used by Type designers when creati
 @locl: "locl" 1; //Localized Forms
 ```
 
+## LESS Markup pattern
+The LESS boilerplate contains `@value`s up to 10. Which means you can have up to 10 typographic values in the same `font-feature-settings` to activate multiple features at once. Use values from the variable section. Note the difference between LESS and SCSS multiple values.
+
+```less
+h1{
+  .font-feature-settings(@value);
+}  
+
+h1{
+  .font-feature-settings(@value, @value1);
+}
+```
 ## LESS Output and Use
 To use this boilerplate simply declare the class you want to apply features to, call the class `.font-feature-settings` and then pass in the values (OpenType features) you need. Each example shows the LESS code on top followed by the preprocessed.
 
@@ -111,36 +123,6 @@ To use this boilerplate simply declare a class, use `@include font-feature-setti
 
 //Two values
 .differentClass { @include font-feature-settings($liga, $smcp); }
-
-.differentClass {
-  font-feature-settings: "liga" 1, "smcp" 1;
-  -webkit-font-feature-settings: "liga" 1, "smcp" 1;
-  -moz-font-feature-settings: "liga" 1, "smcp" 1;
-  -o-font-feature-settings: "liga" 1, "smcp" 1;
-  -ms-font-feature-settings: "liga" 1, "smcp" 1;
-}
-```
-
-## Stylus Output and Use
-To use this boilerplate simply declare a class, use `font-feature-settings` to produce the OpenType CSS property and then pass in the values (OpenType features) you need. Each example shows the Stylus code on top followed by the preprocessed.
-
-```
-//One value
-.className
-  font-feature-settings $liga
-
-.className {
-  font-feature-settings: "liga" 1;
-  -webkit-font-feature-settings: "liga" 1;
-  -moz-font-feature-settings: "liga" 1;
-  -o-font-feature-settings: "liga" 1;
-  -ms-font-feature-settings: "liga" 1;
-}
-
-
-//Two values
-.differentClass
-  font-feature-settings $liga, $smcp
 
 .differentClass {
   font-feature-settings: "liga" 1, "smcp" 1;
