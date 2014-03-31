@@ -61,18 +61,6 @@ Variable names are based on the OpenType code used by Type designers when creati
 @locl: "locl" 1; //Localized Forms
 ```
 
-## LESS Markup pattern
-The LESS boilerplate contains `@value`s up to 10. Which means you can have up to 10 typographic values in the same `font-feature-settings` to activate multiple features at once. Use values from the variable section. Note the difference between LESS and SCSS multiple values.
-
-```less
-h1{
-  .font-feature-settings(@value);
-}
-
-h1{
-  .font-feature-settings(@value, @value1);
-}
-```
 ## LESS Output and Use
 To use this boilerplate simply declare the class you want to apply features to, call the class `.font-feature-settings` and then pass in the values (OpenType features) you need. Each example shows the LESS code on top followed by the preprocessed.
 
