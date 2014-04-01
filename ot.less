@@ -48,83 +48,11 @@
 font-feature-settings:;
 }
 
-//Up to 10 values per font-feature-settings property
-.font-feature-settings(@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8, @value9) {
-  font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8, @value9;
-  -webkit-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8, @value9;
-  -moz-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8, @value9;
-  -o-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8, @value9;
-  -ms-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8, @value9;
-}
-
-.font-feature-settings(@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8) {
-  font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8;
-  -webkit-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8;
-  -moz-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8;
-  -o-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8;
-  -ms-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8;
-}
-
-.font-feature-settings(@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7) {
-  font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7;
-  -webkit-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7;
-  -moz-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7;
-  -o-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7;
-  -ms-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6, @value7;
-}
-
-.font-feature-settings(@value, @value1, @value2, @value3, @value4, @value5, @value6) {
-  font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6;
-  -webkit-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6;
-  -moz-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6;
-  -o-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6;
-  -ms-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5, @value6;
-}
-
-.font-feature-settings(@value, @value1, @value2, @value3, @value4, @value5) {
-  font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5;
-  -webkit-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5;
-  -moz-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5;
-  -o-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5;
-  -ms-font-feature-settings:@value, @value1, @value2, @value3, @value4, @value5;
-}
-
-.font-feature-settings(@value, @value1, @value2, @value3, @value4) {
-  font-feature-settings:@value, @value1, @value2, @value3, @value4;
-  -webkit-font-feature-settings:@value, @value1, @value2, @value3, @value4;
-  -moz-font-feature-settings:@value, @value1, @value2, @value3, @value4;
-  -o-font-feature-settings:@value, @value1, @value2, @value3, @value4;
-  -ms-font-feature-settings:@value, @value1, @value2, @value3, @value4;
-}
-
-.font-feature-settings(@value, @value1, @value2, @value3) {
-  font-feature-settings:@value, @value1, @value2, @value3;
-  -webkit-font-feature-settings:@value, @value1, @value2, @value3;
-  -moz-font-feature-settings:@value, @value1, @value2, @value3;
-  -o-font-feature-settings:@value, @value1, @value2, @value3;
-  -ms-font-feature-settings:@value, @value1, @value2, @value3;
-}
-
-.font-feature-settings(@value, @value1, @value2) {
-  font-feature-settings:@value, @value1, @value2;
-  -webkit-font-feature-settings:@value, @value1, @value2;
-  -moz-font-feature-settings:@value, @value1, @value2;
-  -o-font-feature-settings:@value, @value1, @value2;
-  -ms-font-feature-settings:@value, @value1, @value2;
-}
-
-.font-feature-settings(@value, @value1) {
-  font-feature-settings:@value, @value1;
-  -webkit-font-feature-settings:@value, @value1;
-  -moz-font-feature-settings:@value, @value1;
-  -o-font-feature-settings:@value, @value1;
-  -ms-font-feature-settings:@value, @value1;
-}
-
-.font-feature-settings(@value) {
-  font-feature-settings:@value;
-  -webkit-font-feature-settings:@value;
-  -moz-font-feature-settings:@value;
-  -o-font-feature-settings:@value;
-  -ms-font-feature-settings:@value;
+// Unlimited number of values per font-feature-settings property
+.font-feature-settings(...) {
+  font-feature-settings:@arguments;
+  -webkit-font-feature-settings:@arguments;
+  -moz-font-feature-settings:@arguments;
+  -o-font-feature-settings:@arguments;
+  -ms-font-feature-settings:@arguments;
 }
