@@ -86,7 +86,7 @@ Variable names are based on the OpenType code used by Type designers when creati
 ```
 
 ## LESS Markup pattern
-The LESS boilerplate contains `@value`s up to 10. Which means you can have up to 10 typographic values in the same `font-feature-settings` to activate multiple features at once. Use values from the variable section. Note the difference between LESS and SCSS multiple values.
+Use values from the variable section. Note the difference between LESS, SCSS and stylus multiple values.
 
 ```less
 h1{
@@ -94,7 +94,7 @@ h1{
 }
 
 h1{
-  .font-feature-settings(@value, @value1);
+  .font-feature-settings(@value, @value1;);
 }
 ```
 ## LESS Output and Use
