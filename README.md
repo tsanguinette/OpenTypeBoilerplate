@@ -2,7 +2,7 @@
 A preprocessor boilerplate to easily use and control OpenType features in webfonts. This Git is an addition to a thesis project which promotes and educates OpenType features in webfonts through the W3C lower-level `font-feature-settings` CSS property.
 
 * Author: Tyler Sanguinette 2013-2014
-* Contributor: Jorge Colindres 2014
+* Contributors: Jorge Colindres 2014; Michael Russell 2014
 * License: MIT
 
 **Thesis Project:** [http://typequest.org](http://typequest.org/)
@@ -29,16 +29,19 @@ Variable names are based on the OpenType code used by Type designers when creati
 @dlig: "dlig" 1; //Discretionary Ligatures
 @hlig: "hlig" 1; //Historical Ligatures
 @clig: "clig" 1; //Contextual Ligatures
+@rlig: "rlig" 1; //Required Ligatures
 @smcp: "smcp" 1; //Small Caps
 @c2sc: "c2sc" 1; //Small Caps from Caps
+@unic: "unic" 1; //Unicase
 @cpsp: "cpsp" 1; //Capital Spacing
+@aalt: "aalt" 1; //Access All Alternates
 @titl: "titl" 1; //Titling Alternates
 @lnum: "lnum" 1; //Lining Numbers
 @onum: "onum" 1; //Old-style Numbers
 @ordn: "ordn" 1; //Ordinals
 @sups: "sups" 1; //Superscript
 @subs: "subs" 1; //Subscript
-@sinf: "sinf" 1; //Scientific Inferiors
+@sinf: "sinf" 1; //Scientific inferiors
 @numr: "numr" 1; //Numerator
 @dnom: "dnom" 1; //Denominator
 @pnum: "tnum" 1; //Proportional Spacing
@@ -53,12 +56,33 @@ Variable names are based on the OpenType code used by Type designers when creati
 @salt: "salt" 1; //Stylistic Alternates
 @c2sc: "c2sc" 1; //Small Capitals from Capitals
 @c2pc: "c2pc" 1; //Petite Capitals from Capitals
+@pcap: "pcap" 1; //Petite Capitals
 @ss01: "ss01" 1; //Stylistic Set 1
 @ss02: "ss02" 1; //Stylistic Set 2
 @ss03: "ss03" 1; //Stylistic Set 3
 @ss04: "ss04" 1; //Stylistic Set 4
+@ss05: "ss05" 1; //Stylistic Set 5
+@ss04: "ss06" 1; //Stylistic Set 6
 @size: "size" 1; //Optical Size
 @locl: "locl" 1; //Localized Forms
+@zero: "zero" 1; //Slashed Zero
+@case: "case" 1; //Case Sensitive Forms
+@mgrk: "mgrk" 1; //Mathematical Greek
+@nalt: "nalt" 1; //Alternate Annotation Forms
+@ornm: "ornum" 1; //Ornaments
+
+//Language Support
+@isol: "isol" 1; //Isolated Forms
+@init: "init" 1; //Initial Forms
+@medi: "medi" 1; //Medial Forms
+@fina: "fina" 1; //Final Forms
+@ccmp: "ccmp" 1; //Glyph Composition/Decomposition
+@mark: "mark" 1; //Mark to Base Positioning
+@mkmk: "mkmk" 1; //Mark to Mark Positioning
+
+@akhn: "akhn" 1; //Akhands
+@vatu: "vatu" 1; //Vettu Variants
+@pkna: "pkna" 1; //Proportional Kana
 ```
 
 ## LESS Markup pattern
