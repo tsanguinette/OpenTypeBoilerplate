@@ -1,5 +1,7 @@
 # Type Quest 2.0
-After many years of neglect, the original Type Quest is finally getting an update between late 2017 and early 2018. Stay tuned for the release! In meantime, you can continue to use the old site found at the links below. If you have any suggestions for the project, please contact me at [http://tylersanguinette.com/#contact-me](http://tylersanguinette.com/#contact-me).
+After many years of neglect, the original Type Quest is finally getting an update between late 2017 and early 2018. Stay tuned for the release! In the meantime, you can continue to use the old site found at the link below.
+
+If you have any suggestions for the project, please contact me at [http://tylersanguinette.com/#contact-me](http://tylersanguinette.com/#contact-me).
 
 # OpenType Mixin Boilerplate
 A preprocessor boilerplate to easily use webfont OpenType features with CSS. This Git is an addition to a thesis project which promotes and educates webfont OpenType features through the W3C lower-level `font-feature-settings` CSS property.
