@@ -1,3 +1,6 @@
+# Type Quest 2.0
+After many years of neglect, the original Type Quest is finally getting an update between late 2017 and early 2018. Stay tuned for the release! In meantime, you can continue to use the old site found at the links below. If you have any suggestions for the project, please contact me at [http://tylersanguinette.com/#contact-me](http://tylersanguinette.com/#contact-me).
+
 # OpenType Mixin Boilerplate
 A preprocessor boilerplate to easily use webfont OpenType features with CSS. This Git is an addition to a thesis project which promotes and educates webfont OpenType features through the W3C lower-level `font-feature-settings` CSS property.
 
@@ -7,9 +10,6 @@ A preprocessor boilerplate to easily use webfont OpenType features with CSS. Thi
 
 **Thesis Project:** [http://tylersanguinette.com/typequest/](http://tylersanguinette.com/typequest/)
 **Thesis Presentation:** [http://tylersanguinette.com/typequest/presentation](http://tylersanguinette.com/typequest/presentation)
-
-##Type Quest 2.0
-After many years of neglect, the original Type Quest is finally getting an update between late 2017 and early 2018. Stay tuned for the release! In meantime, you can continue to use the old site found at the links below. If you have any suggestions for the project, please contact me at [http://tylersanguinette.com/#contact-me](http://tylersanguinette.com/#contact-me).
 
 ## Purpose
 The purpose of this boilerplate is to help make a faster workflow for developers and designers who want to control fine typographic detail with SCSS, LESS and Stylus but do not want to write the large amount of code (browser prefixes) to produce it.
